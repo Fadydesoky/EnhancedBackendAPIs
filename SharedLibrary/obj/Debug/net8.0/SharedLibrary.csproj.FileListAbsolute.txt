@@ -1,0 +1,14 @@
+D:\EnhancedBackendAPIs\SharedLibrary\bin\Debug\net8.0\SharedLibrary.deps.json
+D:\EnhancedBackendAPIs\SharedLibrary\bin\Debug\net8.0\SharedLibrary.runtimeconfig.json
+D:\EnhancedBackendAPIs\SharedLibrary\bin\Debug\net8.0\SharedLibrary.dll
+D:\EnhancedBackendAPIs\SharedLibrary\bin\Debug\net8.0\SharedLibrary.pdb
+D:\EnhancedBackendAPIs\SharedLibrary\obj\Debug\net8.0\SharedLibrary.csproj.AssemblyReference.cache
+D:\EnhancedBackendAPIs\SharedLibrary\obj\Debug\net8.0\SharedLibrary.GeneratedMSBuildEditorConfig.editorconfig
+D:\EnhancedBackendAPIs\SharedLibrary\obj\Debug\net8.0\SharedLibrary.AssemblyInfoInputs.cache
+D:\EnhancedBackendAPIs\SharedLibrary\obj\Debug\net8.0\SharedLibrary.AssemblyInfo.cs
+D:\EnhancedBackendAPIs\SharedLibrary\obj\Debug\net8.0\SharedLibrary.csproj.CoreCompileInputs.cache
+D:\EnhancedBackendAPIs\SharedLibrary\obj\Debug\net8.0\SharedLibrary.dll
+D:\EnhancedBackendAPIs\SharedLibrary\obj\Debug\net8.0\refint\SharedLibrary.dll
+D:\EnhancedBackendAPIs\SharedLibrary\obj\Debug\net8.0\SharedLibrary.pdb
+D:\EnhancedBackendAPIs\SharedLibrary\obj\Debug\net8.0\SharedLibrary.genruntimeconfig.cache
+D:\EnhancedBackendAPIs\SharedLibrary\obj\Debug\net8.0\ref\SharedLibrary.dll

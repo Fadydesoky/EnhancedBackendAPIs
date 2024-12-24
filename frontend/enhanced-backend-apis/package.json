@@ -1,0 +1,44 @@
+{
+  "name": "enhanced-backend-apis-frontend",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@headlessui/react": "^1.7.17",
+    "@react-spring/three": "^9.7.3",
+    "@react-three/drei": "^9.88.2",
+    "@react-three/fiber": "^8.14.5",
+    "@tanstack/react-query": "^4.29.25",
+    "axios": "^1.4.0",
+    "framer-motion": "^10.16.4",
+    "google-protobuf": "^3.21.2",
+    "grpc-web": "^1.4.2",
+    "lucide-react": "^0.263.1",
+    "next": "13.4.10",
+    "next-themes": "^0.2.1",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
+    "react-hot-toast": "^2.4.1",
+    "three": "^0.171.0",
+    "three-mesh-bvh": "^0.8.3",
+    "xml2js": "^0.6.2"
+  },
+  "devDependencies": {
+    "@types/node": "20.4.2",
+    "@types/react": "18.2.15",
+    "@types/react-dom": "18.2.7",
+    "@types/three": "^0.156.0",
+    "@types/xml2js": "^0.4.14",
+    "autoprefixer": "10.4.14",
+    "eslint": "8.45.0",
+    "eslint-config-next": "13.4.10",
+    "postcss": "8.4.26",
+    "tailwindcss": "3.3.3",
+    "typescript": "5.1.6"
+  }
+}

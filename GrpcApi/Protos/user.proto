@@ -1,0 +1,47 @@
+syntax = "proto3";
+
+import "google/protobuf/empty.proto";
+import "google/protobuf/timestamp.proto";
+
+option csharp_namespace = "GrpcApi";
+
+package user;
+
+service UserService {
+  rpc GetUser (GetUserRequest) returns (UserReply);
+  rpc GetAllUsers (google.protobuf.Empty) returns (UsersReply);
+  rpc CreateUser (CreateUserRequest) returns (UserReply);
+  rpc UpdateUser (UpdateUserRequest) returns (UserReply);
+  rpc DeleteUser (DeleteUserRequest) returns (google.protobuf.Empty);
+}
+
+message GetUserRequest {
+  int32 id = 1;
+}
+
+message CreateUserRequest {
+  string name = 1;
+  string email = 2;
+}
+
+message UpdateUserRequest {
+  int32 id = 1;
+  string name = 2;
+  string email = 3;
+}
+
+message DeleteUserRequest {
+  int32 id = 1;
+}
+
+message UserReply {
+  int32 id = 1;
+  string name = 2;
+  string email = 3;
+  google.protobuf.Timestamp created_at = 4;
+}
+
+message UsersReply {
+  repeated UserReply users = 1;
+}
+

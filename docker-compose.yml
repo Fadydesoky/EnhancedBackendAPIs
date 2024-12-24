@@ -1,0 +1,48 @@
+services:
+  # gRPC API Service
+  grpc-api:
+    build:
+      context: ./GrpcApi  # Path to the gRPC API directory
+    ports:
+      - "5115:5115"  # Exposing the gRPC API on port 5115
+    volumes:
+      - ./shared.db:/app/shared.db  # Mount the SQLite database from Enhancedbackendapis
+      - ./SharedLibrary:/app/SharedLibrary  # Mount SharedLibrary to access AppDbContext and Data folder
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Production
+
+  # SOAP API Service
+  soap-api:
+    build:
+      context: ./SoapApi  # Path to the SOAP API directory
+    ports:
+      - "5269:5269"  # Exposing the SOAP API on port 5269
+    volumes:
+      - ./shared.db:/app/shared.db  # Mount the SQLite database from Enhancedbackendapis
+      - ./SharedLibrary:/app/SharedLibrary  # Mount SharedLibrary to access AppDbContext and Data folder
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Production
+
+  # REST API Service
+  rest-api:
+    build:
+      context: ./RestApi  # Path to the REST API directory
+    ports:
+      - "5147:5147"  # Exposing the REST API on port 5147
+    volumes:
+      - ./shared.db:/app/shared.db  # Mount the SQLite database from Enhancedbackendapis
+      - ./SharedLibrary:/app/SharedLibrary  # Mount SharedLibrary to access AppDbContext and Data folder
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Production
+
+  # Frontend (React/Next.js)
+  frontend:
+    build:
+      context: ./frontend/enhanced-backend-apis  # Path to the frontend directory (inside the subfolder)
+    ports:
+      - "3000:80"  # Exposing the frontend app on port 3000 for React/Next.js
+
+  cache:
+    image: redis:alpine
+    ports:
+      - "6379:6379"
