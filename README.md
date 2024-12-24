@@ -1,8 +1,8 @@
-<Enhanced Backend APIs>
+Enhanced Backend APIs
 
 This project is a multi-faceted backend solution built using .NET 8.0, offering three different types of APIs: REST, gRPC, and SOAP, alongside a React/Next.js frontend. It is designed for scalability and flexibility, allowing you to handle different types of communication protocols for various client needs.
 
-<Key Features:>
+Key Features:
 
 1- REST API: Provides a traditional RESTful interface for communication. Exposed on port 5147.
 
@@ -14,7 +14,7 @@ This project is a multi-faceted backend solution built using .NET 8.0, offering 
 
 5- Database: The project uses SQLite as the database solution, providing a lightweight, serverless option. The SQLite database file (shared.db) is shared among all backend services, ensuring data consistency.
 
-<Architecture:>
+Architecture:
 
 Backend APIs: The backend is divided into three services (REST, gRPC, SOAP), each running in separate containers. They all interact with a shared SQLite database (shared.db).
 
@@ -22,7 +22,7 @@ Shared Library: Common code (like AppDbContext and models) is located in a share
 
 Dockerized Environment: The entire application, including the frontend and backend services, is dockerized using Docker Compose for easy setup, management, and scalability.
 
-<Technologies Used:>
+Technologies Used:
 
 Backend: .NET 8.0 (gRPC, REST, SOAP)
 
